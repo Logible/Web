@@ -1,0 +1,21 @@
+.link .familyArea {
+  display: flex;
+}
+.link .familyArea :hover {
+  background: gold;
+}
+.link .familyArea li {
+  display: inline-block;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin: 10px;
+  padding: 10px;
+}
+.link .familyArea li a {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+}

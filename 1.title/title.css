@@ -1,0 +1,22 @@
+.first h2 {
+  color: blue;
+}
+.first h2 text.firstText {
+  font-size: 40px;
+}
+.first .firstParagraph {
+  color: #f0f;
+}
+.first .firstParagraph text {
+  text-decoration: underline dotted red;
+}
+.second h2 {
+  color: red;
+}
+.second h2 text.secondText {
+  color: green;
+  font-size: 40px;
+}
+.third h2 .firstText {
+  font-size: 40px;
+}
