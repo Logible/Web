@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+
+.box {
+    border    : 1px solid orange;
+    height    : 450px;
+    width     : 320px;
+    box-shadow: 5px 5px 5px silver;
+
+    img {
+        width: 100%;
+    }
+
+    .bottom {
+        margin: 20px;
+        ;
+
+        .introduce {
+            white-space  : nowrap;
+            overflow     : hidden;
+            text-overflow: ellipsis;
+        }
+
+        .link {
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+
+            .triangle {
+                height     : 0px;
+                width      : 0px;
+                border     : 10px solid transparent;
+                border-left: 10px solid red;
+                display: inline-block;
+            }
+
+            a {
+                padding: 10px;
+            }
+
+            .separate {
+                color        : #CCC;
+                padding-right: 10px;
+            }
+
+            .price {
+                color: red;
+            }
+        }
+    }
+}

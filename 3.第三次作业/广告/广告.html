@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="广告.css"> -->
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .box {
+        border: 1px solid orange;
+        height: 450px;
+        width: 320px;
+        box-shadow: 5px 5px 5px silver;
+    }
+
+    .box img {
+        width: 100%;
+    }
+
+    .box .bottom {
+        margin: 20px;
+    }
+
+    .box .bottom .introduce {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .box .bottom .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box .bottom .link .triangle {
+        height: 0px;
+        width: 0px;
+        border: 10px solid transparent;
+        border-left: 10px solid red;
+        display: inline-block;
+    }
+
+    .box .bottom .link a {
+        padding: 10px;
+    }
+
+    .box .bottom .link .separate {
+        color: #CCC;
+        padding-right: 10px;
+    }
+
+    .box .bottom .link .price {
+        color: red;
+    }
+</style>
+
+<body>
+
+    <div class="box">
+        <image src="https://raw.githubusercontent.com/Logible/Image/main/note_image/20210926165506.png" alt="" />
+        <div class="bottom">
+            <p class="introduce">方太 抽油烟机 家用抽吸油烟机 欧式顶吸式脱排油烟机 纯平触控20立方一键瞬吸大风量 以旧换新EMC5</p>
+            <div class="link">
+                <div class="triangle"></div>
+                <a href="#">点击查看详情</a>
+                <text class="separate">|</text>
+                <text class="price">￥2299.00</text>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
