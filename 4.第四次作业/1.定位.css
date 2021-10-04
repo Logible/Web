@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.title {
+  background-color: yellow;
+  border: 5px solid blue;
+  margin: 0px;
+}
+.title2 {
+  margin: 0px;
+  background-color: yellow;
+  border: 5px solid green;
+  position: sticky;
+  top: 0px;
+  left: 30px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.title {
+  background-color: yellow;
+  border: 5px solid blue;
+  margin: 0px;
+}
+.title2 {
+  margin: 0px;
+  background-color: yellow;
+  border: 5px solid green;
+  position: sticky;
+  top: 0px;
+  left: 30px;
+  z-index: 1;
+}
+.title2 .link {
+  font-size: 25px;
+  margin: 10px;
+}
+.leftBox {
+  position: fixed;
+  top: 350px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  background: #96e969;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightBox {
+  position: fixed;
+  top: 350px;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  background: #96e969;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mid {
+  position: relative;
+  border: 2px solid red;
+  width: 50%;
+  margin: 0 auto;
+}
+.mid .section {
+  margin: 0 20px;
+}
+.mid .article {
+  margin: 20px;
+  border: 2px solid orange;
+}
+.footer {
+  border: 2px solid red;
+  background: #69E969;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+.absolute {
+  position: absolute;
+  top: 70px;
+  right: 40px;
+  background: pink;
+  padding: 20px;
+  border-radius: 20px;
+}

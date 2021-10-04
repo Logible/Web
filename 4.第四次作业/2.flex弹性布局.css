@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .top {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+.container .top .one {
+  background: blue;
+  border: 1px solid #992282;
+  flex: 100px;
+  width: 100px;
+  height: 100%;
+}
+.container .top .two {
+  margin: 0 10px;
+  background: pink;
+  border: 1px solid #000;
+  flex: 100px;
+  height: 100%;
+}
+.container .top .three {
+  background: green;
+  flex: auto;
+  border: 1px solid #000;
+  height: 100%;
+}
+.container .mid {
+  width: 800px;
+  display: flex;
+  margin: 10px 0;
+  height: 100px;
+}
+.container .mid .four {
+  border: 1px solid #000;
+  flex: auto;
+  height: 100%;
+}
+.container .mid .Five {
+  margin: 0 10px;
+  border: 1px solid #000;
+  height: 100%;
+  flex: auto;
+}
+.container .mid .six {
+  height: 100%;
+  margin: 0 10px;
+  flex: auto;
+  border: 1px solid #000;
+}
+.container .mid .Seven {
+  flex: auto;
+  border: 1px solid #000;
+  height: 100%;
+}
+.container .bottom {
+  display: flex;
+  width: 800px;
+  height: 100px;
+}
+.container .bottom .Eight {
+  border: 1px solid #000;
+  flex: 1;
+  height: 100%;
+}
+.container .bottom .Nine {
+  height: 100%;
+  flex: 2;
+  border: 1px solid #000;
+  margin: 0 10px;
+}
+.container .bottom .Ten {
+  height: 100%;
+  flex: 1;
+  border: 1px solid #000;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="1.定位.css"> -->
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .title {
+            background-color: yellow;
+            border: 5px solid blue;
+            margin: 0px;
+        }
+
+        .title2 {
+            margin: 0px;
+            background-color: yellow;
+            border: 5px solid green;
+            position: sticky;
+            top: 0px;
+            left: 30px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .title {
+            background-color: yellow;
+            border: 5px solid blue;
+            margin: 0px;
+        }
+
+        .title2 {
+            margin: 0px;
+            background-color: yellow;
+            border: 5px solid green;
+            position: sticky;
+            top: 0px;
+            left: 30px;
+            z-index: 1;
+        }
+
+        .title2 .link {
+            font-size: 25px;
+            margin: 10px;
+        }
+
+        .leftBox {
+            position: fixed;
+            top: 350px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background: #96e969;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rightBox {
+            position: fixed;
+            top: 350px;
+            right: 100px;
+            width: 100px;
+            height: 100px;
+            background: #96e969;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mid {
+            position: relative;
+            border: 2px solid red;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .mid .section {
+            margin: 0 20px;
+        }
+
+        .mid .article {
+            margin: 20px;
+            border: 2px solid orange;
+        }
+
+        .footer {
+            border: 2px solid red;
+            background: #69E969;
+            padding: 20px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 70px;
+            right: 40px;
+            background: pink;
+            padding: 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="title">&lt;hearder&gt;</header>
+
+    <nav class="title2">&lt;nav&gt; sticky
+        <div class="link">
+            <a href="#">Link One</a>
+            <a href="#">Link Two</a>
+            <a href="#">Link Three</a>
+        </div>
+    </nav>
+
+    <div class="mid">
+        <section class="section">
+            父亲的相对定位
+        </section>
+        <article class="article">
+            &lt;article&gt;
+            <h2>Article One</h2>
+            <text class="articleContent">Finally, both generals firmly stated that al-Qaeda is still present in
+                Afghanistan - directly contradicting Biden's earlier statement that the terrorist organisation had been
+                eradicated.
+
+                All that gave Republicans ammunition to accuse the president of lying to the American people.
+
+                Mr Biden didn't have to make such sweeping assurances. He could have simply said he considered the
+                military's advice but stood by his decision to withdraw. Like many politicians before him, however, he
+                talked his way into trouble. Republican senators also questioned why Mr Biden had promised to keep the
+                military in place until all US citizens were evacuated, given that there are still Americans in
+                Afghanistan weeks after the final withdrawal.
+            </text>
+        </article>
+        <article class="article">
+            &lt;article&gt;
+            <h2>Article Two</h2>
+            <text class="articleContent">
+                Mark Milley, Lloyd Austin and Kenneth McKenzie may have been testifying before Congress, but Joe Biden's
+                own words did the most damage to the president on Tuesday.
+
+                Republicans hammered the president for recent statements that the generals, either explicitly or
+                indirectly, contradicted.
+
+                During an August interview, Biden insisted there were no generals urging him to keep some US troops in
+                Afghanistan to prevent a Taliban takeover. Both Gen Milley and Gen McKenzie said they thought those
+                troops were needed and, at one point, the latter said he told the president as much.Finally, both
+                generals firmly stated that al-Qaeda is still present in Afghanistan - directly contradicting Biden's
+                earlier statement that the terrorist organisation had been eradicated.</text>
+        </article>
+
+        <div class="absolute">
+            我是绝绝子的绝对定位
+        </div>
+    </div>
+
+    <footer class="footer">我是底部</footer>
+
+    <aside class="leftBox">&lt;<span>左青龙</span>&gt;</aside>
+    <aside class="rightBox">&lt;右白虎&gt;</aside>
+
+
+</body>
+
+</html>
