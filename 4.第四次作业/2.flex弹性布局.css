@@ -13,15 +13,15 @@
 .container .top .one {
   background: blue;
   border: 1px solid #992282;
-  flex: 100px;
   width: 100px;
+  height: 50px;
   height: 100%;
 }
 .container .top .two {
   margin: 0 10px;
   background: pink;
   border: 1px solid #000;
-  flex: 100px;
+  width: 100px;
   height: 100%;
 }
 .container .top .three {
