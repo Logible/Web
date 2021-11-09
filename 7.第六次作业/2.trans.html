@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2.trans.css">
+</head>
+<style>
+    div.trans div.list ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    div.trans div.list ul li {
+        width: 220px;
+        height: 80px;
+        background: #000;
+        color: #FFF;
+        margin: 10px;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.trans div.list ul li:hover {
+        transform: scale(1.1, 1.1);
+        transition-duration: 500ms;
+        background: red;
+        color: #000;
+    }
+</style>
+
+<body>
+
+    <div class="trans">
+        <div class="list">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+                <li>Links</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

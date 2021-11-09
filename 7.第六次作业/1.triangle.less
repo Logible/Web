@@ -1,0 +1,42 @@
+.triangle {}
+
+div.Instant-buy {
+    display         : flex;
+    background-color: #FF0000;
+    width           : 460px;
+    height          : 90px;
+    position        : relative;
+
+    div.now-price {
+        position       : relative;
+        flex           : 1;
+        color          : #FFF;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        font-size      : 38px;
+    }
+
+    div.original-price {
+        text-decoration: line-through;
+        font-size      : 36px;
+        flex           : 1;
+        background     : #ffff00;
+        color          : #c0c0c0;
+        margin         : 10px;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+    }
+
+    div.triangle {
+        width       : 0;
+        height      : 0;
+        border-left : 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top  : 70px solid #ff0000;
+        margin      : 10px;
+        position    : absolute;
+        right       : 180px;
+    }
+}
