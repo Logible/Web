@@ -1,0 +1,417 @@
+* {
+     margin : 0;
+     padding: 0;
+}
+
+body {
+     background-color   : #efefef;
+     // background-image: url(../../6.网页小作业/图片素材/Background.png);
+}
+
+.topNavigation {
+     background-color: #ee7419;
+     color           : #FFF;
+     width           : 100%;
+     display         : flex;
+     height          : 56px;
+     font-size       : 20px;
+
+     .manageQues {
+          flex           : 1;
+          display        : flex;
+          align-items    : center;
+          justify-content: center;
+
+          .quesIcon {
+               margin-right   : 5px;
+               width          : 18px;
+               height         : 18px;
+               color          : #ee7419;
+               background     : #fff;
+               display        : flex;
+               align-items    : center;
+               justify-content: center;
+               border-radius  : 50%;
+          }
+
+          .quesFont {}
+     }
+
+     .myQues {
+          flex           : 6;
+          display        : flex;
+          align-items    : center;
+          justify-content: flex-start;
+     }
+}
+
+.pagebody {
+     width          : 100%;
+     display        : flex;
+     align-items    : center;
+     justify-content: center;
+
+     .newQues {
+          // flex: 80%;
+          box-shadow     : 4px 4px 4px silver;
+          display        : flex;
+          align-items    : center;
+          justify-content: center;
+          margin         : 50px 100px;
+          background     : #FFF;
+
+          .newBotton {
+               background-color: #ee7419;
+               padding         : 10px;
+               font-weight     : bold;
+               color           : #FFF;
+          }
+     }
+
+     .editQues {
+          margin         : 50px 100px;
+          background     : #FFF;
+          width          : 80%;
+          display        : flex;
+          flex-direction : column;
+          align-items    : center;
+          justify-content: center;
+
+          .title {
+               margin-top : 10px;
+               width      : 80%;
+               font-size  : 28px;
+               font-weight: bold;
+
+               :hover {
+                    background-color: #fef1e8;
+               }
+
+               .title-text {
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+                    padding        : 10px;
+               }
+          }
+
+          .addQues {
+               width          : 90%;
+               padding        : 20px 0;
+               border-top     : 2px solid #eeeeee;
+               border-bottom  : 2px solid #eeeeee;
+               display        : flex;
+               flex-direction : column;
+               justify-content: center;
+               margin         : 20px 50px;
+
+               .addQuesBotton {
+                    border: 1px solid #cfcfcf;
+
+                    .chooseQues {
+                         display        : flex;
+                         margin         : 15px 0;
+                         justify-content: center;
+
+                         .Ques {
+                              padding   : 8px 12px;
+                              background: #eeeeee;
+                              border    : 1px solid #cfcfcf;
+                              margin    : 0 15px;
+                              text-align: center;
+                         }
+                    }
+
+                    .addtext {
+                         padding        : 20px;
+                         font-size      : 25px;
+                         background     : #eeeeee;
+                         display        : flex;
+                         align-items    : center;
+                         justify-content: center;
+                    }
+               }
+          }
+
+          .quesList {
+               :hover {
+                    background-color: #fef1e8;
+               }
+
+               .radioQues {
+                    padding       : 10px;
+                    display       : flex;
+                    flex-direction: column;
+
+                    .radioTitle {}
+
+                    .options {
+                         display       : flex;
+                         flex-direction: column;
+                         padding       : 10px;
+
+                         .option {
+                              padding: 3px;
+                         }
+                    }
+
+                    .radio-operation {
+                         display        : flex;
+                         justify-content: flex-end;
+
+                         .operation {
+                              margin: 0px 5px;
+                         }
+                    }
+               }
+
+               .checkboxQues {
+                    .radioTitle {}
+
+                    padding       : 10px;
+                    display       : flex;
+                    flex-direction: column;
+
+                    .options {
+                         display       : flex;
+                         flex-direction: column;
+                         padding       : 10px;
+
+                         .option {
+                              padding: 3px;
+                         }
+                    }
+
+                    .radio-operation {
+                         display        : flex;
+                         justify-content: flex-end;
+
+                         .operation {
+                              margin: 0px 5px;
+                         }
+                    }
+               }
+
+               .textQues {
+                    padding       : 10px;
+                    display       : flex;
+                    flex-direction: column;
+
+                    .radioTitle {
+                         display        : flex;
+                         justify-content: space-between;
+                    }
+
+                    .textarea {
+                         padding: 4px;
+                         margin : 15px;
+                         border : 1px solid #aca7a7;
+                         width  : 70%;
+                         height : 80px;
+                    }
+
+
+                    .radio-operation {
+                         display        : flex;
+                         justify-content: flex-end;
+
+                         .operation {
+                              margin: 0px 5px;
+                         }
+                    }
+               }
+          }
+
+          .bottom {
+               width  : 100%;
+               display: flex;
+               padding: 20px;
+
+               .data {
+                    flex           : 13;
+                    display        : flex;
+                    justify-content: flex-end;
+                    align-items    : center;
+
+                    .dataText {
+                         padding: 0 10px;
+                    }
+
+                    #start {}
+
+               }
+
+               .operation {
+                    flex           : 16;
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+
+                    .saveQues {
+                         margin         : 0 5px;
+                         border-radius  : 2px;
+                         border         : 2px solid #e6e6e6;
+                         padding        : 5px;
+                         display        : flex;
+                         align-items    : center;
+                         justify-content: center;
+                    }
+               }
+          }
+     }
+}
+
+.releaseQues {
+     background-image: url(../../6.网页小作业/图片素材/Background.png);
+     position        : fixed;
+     top             : 0;
+     left            : 0;
+     display         : flex;
+     align-items     : center;
+     justify-content : center;
+
+     .proptBoxContent {
+
+          display       : flex;
+          flex-direction: column;
+          border-radius : 10px;
+
+          .top {
+               width          : 300px;
+               height         : 5px;
+               display        : flex;
+               justify-content: space-between;
+               align-items    : center;
+               background     : #f7f7f7;
+               padding        : 20px 15px;
+
+               .hint {
+                    font-size: 20px;
+               }
+
+               .close {
+                    font-size: 20px;
+
+               }
+          }
+
+          .mid {
+               background: #FFF;
+               height    : 70px;
+
+               .hint-content {
+                    padding: 15px;
+               }
+          }
+
+          .bottom {
+               display        : flex;
+               background     : #FFF;
+               justify-content: center;
+               padding        : 20px;
+
+
+               .confirm {
+                    margin-right   : 10px;
+                    border         : 1px solid #666666;
+                    padding        : 5px;
+                    background     : #f07600;
+                    width          : 80px;
+                    display        : flex;
+                    justify-content: center;
+                    color          : #eeeeee;
+               }
+
+               .cancel {
+                    border         : 1px solid #666666;
+                    padding        : 5px;
+                    width          : 80px;
+                    display        : flex;
+                    justify-content: center;
+               }
+          }
+     }
+}
+
+.questionList {
+     display       : flex;
+     flex-direction: column;
+     margin        : 20px;
+     width         : 80%;
+
+     .question-content {
+          background: #FFF;
+
+          .single-content {
+               background: #FFF;
+               display   : flex;
+               padding   : 20px;
+               position  : relative;
+
+               :before {
+                    content : "";
+                    position: absolute;
+
+                    width : 95%;
+                    bottom: 0;
+
+                    left         : 0;
+                    right        : 0;
+                    margin-left  : auto;
+                    margin-right : auto;
+                    border-bottom: 2px solid #efefef;
+               }
+
+               .content-radio {
+                    flex: 5;
+               }
+
+               .content-title {
+                    flex: 39;
+               }
+
+               .time {
+                    flex: 16;
+               }
+
+               .status {
+                    flex: 17;
+               }
+
+               .operations {
+                    flex   : 26;
+                    display: flex;
+
+                    .operation {
+                         padding        : 3px 0;
+                         width          : 70px;
+                         display        : flex;
+                         justify-content: center;
+                         align-items    : center;
+                         border         : 1px solid #000;
+                         margin         : 0 3px;
+                    }
+               }
+          }
+
+          .title {
+               // margin: 0;
+               // padding: 20 40px;
+               background: #efefef;
+
+               .operations {
+                    display        : flex;
+                    justify-content: space-between;
+
+                    .operation-text {}
+
+                    .newBotton {
+                         background-color: #ee7419;
+                         padding         : 5px;
+                         font-weight     : bold;
+                         color           : #FFF;
+                    }
+               }
+          }
+     }
+}

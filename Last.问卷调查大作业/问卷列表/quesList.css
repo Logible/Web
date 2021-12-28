@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #efefef;
+}
+.topNavigation {
+  background-color: #ee7419;
+  color: #FFF;
+  width: 100%;
+  display: flex;
+  height: 56px;
+  font-size: 20px;
+}
+.topNavigation .manageQues {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topNavigation .manageQues .quesIcon {
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  color: #ee7419;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.topNavigation .myQues {
+  flex: 6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pagebody {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagebody .newQues {
+  box-shadow: 4px 4px 4px silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 100px;
+  background: #FFF;
+}
+.pagebody .newQues .newBotton {
+  background-color: #ee7419;
+  padding: 10px;
+  font-weight: bold;
+  color: #FFF;
+}
+.pagebody .editQues {
+  margin: 50px 100px;
+  background: #FFF;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pagebody .editQues .title {
+  margin-top: 10px;
+  width: 80%;
+  font-size: 28px;
+  font-weight: bold;
+}
+.pagebody .editQues .title :hover {
+  background-color: #fef1e8;
+}
+.pagebody .editQues .title .title-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.pagebody .editQues .addQues {
+  width: 90%;
+  padding: 20px 0;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 50px;
+}
+.pagebody .editQues .addQues .addQuesBotton {
+  border: 1px solid #cfcfcf;
+}
+.pagebody .editQues .addQues .addQuesBotton .chooseQues {
+  display: flex;
+  margin: 15px 0;
+  justify-content: center;
+}
+.pagebody .editQues .addQues .addQuesBotton .chooseQues .Ques {
+  padding: 8px 12px;
+  background: #eeeeee;
+  border: 1px solid #cfcfcf;
+  margin: 0 15px;
+  text-align: center;
+}
+.pagebody .editQues .addQues .addQuesBotton .addtext {
+  padding: 20px;
+  font-size: 25px;
+  background: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagebody .editQues .quesList :hover {
+  background-color: #fef1e8;
+}
+.pagebody .editQues .quesList .radioQues {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.pagebody .editQues .quesList .radioQues .options {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.pagebody .editQues .quesList .radioQues .options .option {
+  padding: 3px;
+}
+.pagebody .editQues .quesList .radioQues .radio-operation {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagebody .editQues .quesList .radioQues .radio-operation .operation {
+  margin: 0px 5px;
+}
+.pagebody .editQues .quesList .checkboxQues {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.pagebody .editQues .quesList .checkboxQues .options {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.pagebody .editQues .quesList .checkboxQues .options .option {
+  padding: 3px;
+}
+.pagebody .editQues .quesList .checkboxQues .radio-operation {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagebody .editQues .quesList .checkboxQues .radio-operation .operation {
+  margin: 0px 5px;
+}
+.pagebody .editQues .quesList .textQues {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.pagebody .editQues .quesList .textQues .radioTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.pagebody .editQues .quesList .textQues .textarea {
+  padding: 4px;
+  margin: 15px;
+  border: 1px solid #aca7a7;
+  width: 70%;
+  height: 80px;
+}
+.pagebody .editQues .quesList .textQues .radio-operation {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagebody .editQues .quesList .textQues .radio-operation .operation {
+  margin: 0px 5px;
+}
+.pagebody .editQues .bottom {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+}
+.pagebody .editQues .bottom .data {
+  flex: 13;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pagebody .editQues .bottom .data .dataText {
+  padding: 0 10px;
+}
+.pagebody .editQues .bottom .operation {
+  flex: 16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagebody .editQues .bottom .operation .saveQues {
+  margin: 0 5px;
+  border-radius: 2px;
+  border: 2px solid #e6e6e6;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.releaseQues {
+  background-image: url(../../6.网页小作业/图片素材/Background.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.releaseQues .proptBoxContent {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.releaseQues .proptBoxContent .top {
+  width: 300px;
+  height: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 20px 15px;
+}
+.releaseQues .proptBoxContent .top .hint {
+  font-size: 20px;
+}
+.releaseQues .proptBoxContent .top .close {
+  font-size: 20px;
+}
+.releaseQues .proptBoxContent .mid {
+  background: #FFF;
+  height: 70px;
+}
+.releaseQues .proptBoxContent .mid .hint-content {
+  padding: 15px;
+}
+.releaseQues .proptBoxContent .bottom {
+  display: flex;
+  background: #FFF;
+  justify-content: center;
+  padding: 20px;
+}
+.releaseQues .proptBoxContent .bottom .confirm {
+  margin-right: 10px;
+  border: 1px solid #666666;
+  padding: 5px;
+  background: #f07600;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  color: #eeeeee;
+}
+.releaseQues .proptBoxContent .bottom .cancel {
+  border: 1px solid #666666;
+  padding: 5px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+.questionList {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 80%;
+}
+.questionList .question-content {
+  background: #FFF;
+}
+.questionList .question-content .single-content {
+  background: #FFF;
+  display: flex;
+  padding: 20px;
+  position: relative;
+}
+.questionList .question-content .single-content :before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 2px solid #efefef;
+}
+.questionList .question-content .single-content .content-radio {
+  flex: 5;
+}
+.questionList .question-content .single-content .content-title {
+  flex: 39;
+}
+.questionList .question-content .single-content .time {
+  flex: 16;
+}
+.questionList .question-content .single-content .status {
+  flex: 17;
+}
+.questionList .question-content .single-content .operations {
+  flex: 26;
+  display: flex;
+}
+.questionList .question-content .single-content .operations .operation {
+  padding: 3px 0;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  margin: 0 3px;
+}
+.questionList .question-content .title {
+  background: #efefef;
+}
+.questionList .question-content .title .operations {
+  display: flex;
+  justify-content: space-between;
+}
+.questionList .question-content .title .operations .newBotton {
+  background-color: #ee7419;
+  padding: 5px;
+  font-weight: bold;
+  color: #FFF;
+}

@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #efefef;
+}
+.topNavigation {
+  background-color: #ee7419;
+  color: #FFF;
+  width: 100%;
+  display: flex;
+  height: 56px;
+  font-size: 20px;
+  justify-content: flex-start;
+}
+.topNavigation .manageQues {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.editQues {
+  margin: 50px 100px;
+  background: #FFF;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.editQues .title {
+  margin-top: 10px;
+  width: 80%;
+  font-size: 28px;
+  font-weight: bold;
+}
+.editQues .title :hover {
+  background-color: #fef1e8;
+}
+.editQues .title .title-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.editQues .addQues {
+  width: 90%;
+  padding: 20px 0;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 50px;
+}
+.editQues .addQues .addQuesBotton {
+  border: 1px solid #cfcfcf;
+}
+.editQues .addQues .addQuesBotton .chooseQues {
+  display: flex;
+  margin: 15px 0;
+  justify-content: center;
+}
+.editQues .addQues .addQuesBotton .chooseQues .Ques {
+  padding: 8px 12px;
+  background: #eeeeee;
+  border: 1px solid #cfcfcf;
+  margin: 0 15px;
+  text-align: center;
+}
+.editQues .addQues .addQuesBotton .addtext {
+  padding: 20px;
+  font-size: 25px;
+  background: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.editQues .quesList :hover {
+  background-color: #fef1e8;
+}
+.editQues .quesList .radioQues {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.editQues .quesList .radioQues .options {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.editQues .quesList .radioQues .options .option {
+  padding: 3px;
+}
+.editQues .quesList .radioQues .radio-operation {
+  display: flex;
+  justify-content: flex-end;
+}
+.editQues .quesList .radioQues .radio-operation .operation {
+  margin: 0px 5px;
+}
+.editQues .quesList .checkboxQues {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.editQues .quesList .checkboxQues .options {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.editQues .quesList .checkboxQues .options .option {
+  padding: 3px;
+}
+.editQues .quesList .checkboxQues .radio-operation {
+  display: flex;
+  justify-content: flex-end;
+}
+.editQues .quesList .checkboxQues .radio-operation .operation {
+  margin: 0px 5px;
+}
+.editQues .quesList .textQues {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.editQues .quesList .textQues .radioTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.editQues .quesList .textQues .textarea {
+  padding: 4px;
+  margin: 15px;
+  border: 1px solid #aca7a7;
+  width: 70%;
+  height: 80px;
+}
+.editQues .quesList .textQues .radio-operation {
+  display: flex;
+  justify-content: flex-end;
+}
+.editQues .quesList .textQues .radio-operation .operation {
+  margin: 0px 5px;
+}
+.editQues .bottom {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+}
+.editQues .bottom .data {
+  flex: 13;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.editQues .bottom .data .dataText {
+  padding: 0 10px;
+}
+.editQues .bottom .operation {
+  flex: 16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.editQues .bottom .operation .saveQues {
+  margin: 0 5px;
+  border-radius: 2px;
+  border: 2px solid #e6e6e6;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

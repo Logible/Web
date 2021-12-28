@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问卷管理</title>
+    <link rel="stylesheet" href="./quesList.css">
+</head>
+
+<body>
+    <div onclick="myQues()" class="topNavigation">
+        <div class="manageQues">
+            <text class="quesIcon">?</text>
+            <text class="quesFont">问卷管理</text>
+        </div>
+        <div class="myQues">我的问卷</div>
+    </div>
+
+    <div class="pagebody">
+        <!-- 无数据 -->
+        <!-- 显示新建问卷 -->
+        <div style="display: none;" id="newQues" class="newQues">
+            <div id="newBotton" class="newBotton">
+                + 新建问卷
+            </div>
+        </div>
+
+        <!-- 有数据 -->
+        <!-- 显示问卷列表 -->
+        <div style="display: none;" id="questionList" class="questionList">
+            <div class="question-content">
+                <div id="content_title" class="single-content title">
+                    <div class="content-radio">
+                    </div>
+                    <div class="content-title">
+                        标题
+                    </div>
+                    <div class="time">
+                        时间
+                    </div>
+                    <div class="status">
+                        状态
+                    </div>
+                    <div class="operations">
+                        <div class="operation-text">
+                            操作
+                        </div>
+                        <div id="newBotton2" class="newBotton">
+                            + 新建问卷
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div style="display: none;" id="editQues" class="editQues">
+            <div class="title">
+                <div id="titleContent" contenteditable="true" class="title-text">
+                    这里是标题
+                </div>
+            </div>
+            <div class="addQues">
+
+                <div id="quesList" class="quesList">
+
+                </div>
+
+                <div class="addQuesBotton">
+                    <div id="chooseQues" class="chooseQues">
+                        <div id="radioAdd" class="Ques">· 单选</div>
+                        <div id="checkboxAdd" class="Ques">· 多选</div>
+                        <div id="textAdd" class="Ques">· 文本题</div>
+                    </div>
+                    <div id="addtext" class="addtext">
+                        + 添加问题
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="data">
+                    <div class="dataText">
+                        问卷截至日期
+                    </div>
+                    <input type="date" id="dateQues" name="trip-start" value="2018-07-22" min="2018-01-01"
+                        max="2018-12-31">
+                </div>
+                <div class="operation">
+                    <div class="saveQues">保存问卷</div>
+                    <div data-operation="release" id="releaseQues" class="saveQues">发布问卷</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div hidden id="radioQues" class="radioQues">
+        <div contenteditable="true" class="radioTitle">
+            Q 单选题
+        </div>
+        <div class="options">
+            <div class="option">
+                <input type="radio" id="contactChoice1" name="contact" value="email">
+                <label for="contactChoice1">选项1</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="contactChoice2" name="contact" value="phone">
+                <label for="contactChoice2">选项2</label>
+            </div>
+            <!-- <div class="radio-operation">
+                <div class="operation">上移</div>
+                <div class="operation">下移</div>
+                <div class="operation">复用</div>
+                <div class="operation">删除</div>
+            </div> -->
+        </div>
+    </div>
+
+    <div hidden id="checkboxQues" class="checkboxQues">
+        <div contenteditable="true" class="radioTitle">
+            Q 多选题
+        </div>
+        <div class="options">
+            <div class="option">
+                <input type="checkbox" id="horns1" name="horns">
+                <label contenteditable="true" for="horns1">Horns</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="horns2" name="horns">
+                <label contenteditable="true" for="horns2">Horns</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="horns3" name="horns">
+                <label contenteditable="true" for="horns3">Horns</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="horns4" name="horns">
+                <label contenteditable="true" for="horns">Horns</label>
+            </div>
+
+        </div>
+        <!-- <div class="radio-operation">
+            <div class="operation">上移</div>
+            <div class="operation">下移</div>
+            <div class="operation">复用</div>
+            <div class="operation">删除</div>
+        </div> -->
+    </div>
+
+    <div hidden id="textQues" class="textQues">
+        <div class="radioTitle">
+            <text contenteditable="true"> Q 文本题</text>
+            <div class="mustFillIn">
+                <input type="checkbox" id="horns4" name="horns">
+                <label contenteditable="true" for="horns">此项是否必填</label>
+            </div>
+        </div>
+        <div contenteditable="true" class="textarea">
+
+        </div>
+        <!-- <div id="radio-operation" class="radio-operation">
+            <div class="operation">上移</div>
+            <div class="operation">下移</div>
+            <div class="operation">复用</div>
+            <div class="operation">删除</div>
+        </div> -->
+    </div>
+
+    <!-- 为何此处可添加 -->
+    <div style="display: none;" id="promptBox" class="releaseQues">
+        <div class="proptBoxContent">
+            <div class="top">
+                <div class="hint">提示😁</div>
+                <div id="closeBox" class="closeBox">×</div>
+            </div>
+            <div class="mid">
+                <div id="hint-content" class="hint-content">
+                    确认删除此问卷？
+                </div>
+            </div>
+            <div class="bottom">
+                <div id="releaseConfirm" class="confirm">确定</div>
+                <div id="releaseCancel" class="cancel">取消</div>
+            </div>
+        </div>
+    </div>
+
+    <div hidden id="radio-operation" class="radio-operation">
+        <div id="moveupQues" class="moveupQues operation">上移</div>
+        <div id="movedownQues" class="operation">下移</div>
+        <div id="reuseQues" class="operation">复用</div>
+        <div id="deleteQues" class="operation">删除</div>
+    </div>
+
+    <!-- <button id="testBotton" class="testBotton">
+        我是一个testBotton
+    </button> -->
+
+    <div hidden id="singleContent" class="single-content">
+        <div class="content-radio">
+            <input type="radio" id="contactChoice1" name="contact" value="email">
+        </div>
+        <div class="content-title">
+            www
+        </div>
+        <div class="time">
+            2018-12-31
+        </div>
+        <div class="status">
+            未发布
+        </div>
+        <div class="operations">
+            <div onclick="editItemQues(this)" class="operation">
+                编辑
+            </div>
+            <div onclick="removeItemQues(this)" id="removeItem" class="operation">
+                删除
+            </div>
+            <div onclick="viewData()" class="operation">
+                查看数据
+            </div>
+            
+            <div onclick="fillInQues(this)" class="operation">
+                填写问卷
+            </div>
+        </div>
+    </div>
+
+    <script src="./quesList.js"></script>
+</body>
+
+</html>

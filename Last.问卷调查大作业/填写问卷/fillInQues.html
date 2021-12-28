@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fillInQues.css">
+</head>
+
+<body>
+    <div onclick="myQues()" class="topNavigation">
+        <div class="manageQues">
+            <text class="quesFont">填写问卷</text>
+        </div>
+    </div>
+
+    <div id="editQues" class="editQues">
+        <div class="title">
+            <div id="titleContent" contenteditable="true" class="title-text">
+                这里是标题
+            </div>
+        </div>
+        <div class="addQues">
+
+            <div id="quesList" class="quesList">
+
+            </div>
+
+    
+        </div>
+        <div class="bottom">
+            <div class="data">
+                <div class="dataText">
+                    问卷截至日期
+                </div>
+                <input type="date" id="dateQues" name="trip-start" value="2018-07-22" min="2018-01-01"
+                    max="2018-12-31">
+            </div>
+            <div class="operation">
+                <div class="saveQues">保存问卷</div>
+                <div data-operation="release" id="releaseQues" class="saveQues">提交问卷</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./fillInQues.js"></script>
+
+</body>
+
+</html>

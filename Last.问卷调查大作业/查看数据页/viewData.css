@@ -1,0 +1,191 @@
+body {
+  margin: 20px;
+}
+.return {
+  font-size: 20px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aeaeae;
+}
+.title .title-content {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px;
+}
+.data-content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.data-content .radioQues {
+  border: 1px solid #aeaeae;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.data-content .radioQues .radioQues-top {
+  display: flex;
+}
+.data-content .radioQues .radioQues-top .top-name {
+  flex: 5;
+}
+.data-content .radioQues .radioQues-top .top-data {
+  flex: 3;
+}
+.data-content .radioQues .bottom {
+  display: flex;
+  flex-direction: column;
+}
+.data-content .radioQues .bottom .bottom-choose {
+  padding-top: 8px;
+  display: flex;
+}
+.data-content .radioQues .bottom .bottom-choose .choosename {
+  flex: 5;
+}
+.data-content .radioQues .bottom .bottom-choose .progress {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+.data-content .radioQues .bottom .bottom-choose .progress .pro-content {
+  width: 80%;
+  height: 10px;
+  border: 1px solid #b7b7b7;
+  display: flex;
+}
+.data-content .radioQues .bottom .bottom-choose .progress .pro-content .light {
+  flex: 17;
+  background: #e77408;
+}
+.data-content .radioQues .bottom .bottom-choose .progress .pro-content .dark {
+  background: #fff;
+  flex: 3;
+}
+.data-content .radioQues .bottom .bottom-choose .progress .progressNum {
+  padding-left: 10px;
+  color: #646464;
+}
+.data-content .radioQues .bottom .bottom-choose .progress2 {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+.data-content .radioQues .bottom .bottom-choose .progress2 .pro-content {
+  width: 80%;
+  height: 10px;
+  border: 1px solid #b7b7b7;
+  display: flex;
+}
+.data-content .radioQues .bottom .bottom-choose .progress2 .pro-content .light {
+  flex: 3;
+  background: #e77408;
+}
+.data-content .radioQues .bottom .bottom-choose .progress2 .pro-content .dark {
+  background: #fff;
+  flex: 22;
+}
+.data-content .radioQues .bottom .bottom-choose .progress2 .progressNum {
+  padding-left: 10px;
+  color: #646464;
+}
+.data-content .checkboxQues {
+  border: 1px solid #aeaeae;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.data-content .checkboxQues .checkboxQues-top {
+  display: flex;
+}
+.data-content .checkboxQues .checkboxQues-top .top-name {
+  flex: 5;
+}
+.data-content .checkboxQues .checkboxQues-top .top-data {
+  flex: 3;
+}
+.data-content .checkboxQues .bottom {
+  display: flex;
+}
+.data-content .checkboxQues .bottom .choose {
+  flex: 5;
+  padding-bottom: 10px;
+}
+.data-content .checkboxQues .bottom .choose .choose-content {
+  padding-top: 8px;
+}
+.data-content .checkboxQues .bottom .data-pic {
+  flex: 3;
+}
+.data-content .checkboxQues .bottom .data-pic .pic {
+  background-image: conic-gradient(#e98f6f 0deg, #e98f6f 150deg, #c23531 150deg, #c23531 220deg, #61a0a8 180deg, #61a0a8 290deg, #2f4554 290deg);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.data-content .textQues {
+  border: 1px solid #aeaeae;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.data-content .textQues .textQues-top {
+  display: flex;
+}
+.data-content .textQues .textQues-top .top-name {
+  flex: 5;
+}
+.data-content .textQues .textQues-top .top-data {
+  flex: 3;
+}
+.data-content .textQues .bottom .bottom-choose {
+  display: flex;
+}
+.data-content .textQues .bottom .bottom-choose .choosename {
+  flex: 5;
+}
+.data-content .textQues .bottom .bottom-choose .progress {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+.data-content .textQues .bottom .bottom-choose .progress .pro-content {
+  width: 80%;
+  height: 10px;
+  border: 1px solid #b7b7b7;
+  display: flex;
+}
+.data-content .textQues .bottom .bottom-choose .progress .pro-content .light {
+  flex: 17;
+  background: #e77408;
+}
+.data-content .textQues .bottom .bottom-choose .progress .pro-content .dark {
+  background: #fff;
+  flex: 3;
+}
+.data-content .textQues .bottom .bottom-choose .progress .progressNum {
+  padding-left: 10px;
+  color: #646464;
+}
+.returnBotton {
+  display: flex;
+  justify-content: center;
+}
+.returnBotton .return2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 20px;
+  width: 100px;
+  background: #e77408;
+}
